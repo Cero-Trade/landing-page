@@ -59,7 +59,7 @@
             </p>
             <p
               class="text-xs text-grays-3 cursor-pointer"
-              @click="redirectToContactUs">
+              @click="redirectToLink(formLink)">
               Contáctanos
             </p>
           </div>
@@ -88,7 +88,6 @@ import {
   redirectToMission,
   redirectToAchievements,
   redirectToFAQ,
-  redirectToContactUs,
 } from '@/utils/functions';
 
 // images
@@ -121,7 +120,6 @@ export default {
     redirectToMission,
     redirectToAchievements,
     redirectToFAQ,
-    redirectToContactUs,
   },
 };
 </script>

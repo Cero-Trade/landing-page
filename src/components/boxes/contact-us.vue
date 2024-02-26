@@ -4,22 +4,23 @@
         <button
           class="rounded-md text-md text-grays-2 border-solid border-[1.5px]
            border-grays-2 px-6 py-2 cursor-pointer"
-          @click="redirectToContactUs">
+          @click="redirectToLink(formLink)">
             Mensaje
         </button>
     </div>
 </template>
 <script>
 
-import { redirectToContactUs } from '@/utils/functions';
+import { redirectToLink } from '@/utils/functions';
 
 export default {
   data() {
     return {
+      formLink: 'https://h9hk1icgi92.typeform.com/to/KBvFGq8Y',
     };
   },
   methods: {
-    redirectToContactUs,
+    redirectToLink,
   },
 };
 </script>
