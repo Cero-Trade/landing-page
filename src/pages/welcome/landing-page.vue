@@ -1,16 +1,8 @@
 <template>
     <div>
-        <div id="introduction-image" class="absolute -mt-36 right-10">
-            <img
-                :src="costumers"
-                alt="Welcome costumers"
-                id="welcome-costumers"
-                class="block xs:hidden"
-            />
-        </div>
-        <div id="bottom-box" class="bg-background-gray h-36 font-inter other:pl-56 pt-6 other:pr-96
-        xs:px-3">
-            <p class="font-base text-grays-2 text-center">
+        <div id="bottom-box" class="bg-background-gray h-28 font-inter
+        pt-6 flex justify-center">
+            <p class="font-base text-grays-2 text-center max-w-96 xs:px-8">
                 Tranza i-RECS
                 <span class="font-bold">
                     de la manera más
@@ -28,20 +20,6 @@
                 </span>
                 .
             </p>
-            <div id="know-us-container" class="flex justify-end mt-3">
-                <img
-                    :src="knowUsRightArrow"
-                    alt="Know us right arrow"
-                    id="know-us-right-arrow"
-                />
-                <p
-                    id="know-us"
-                    @click="redirectToAboutUs"
-                    class="text-grays-2 underline bold-text cursor-pointer hover:brightness-50"
-                >
-                    Conoce a nuestro equipo
-                </p>
-            </div>
         </div>
         <div
             class="flex flex-row justify-center other:gap-8 mt-8 mb-8"
@@ -50,11 +28,10 @@
             <WelcomeBox
             title="Para generadoras"
             subtitle="Compense la huella de carbono de sus clientes en tan solo unos clics"
-            description='<p>
-                En Cero Trade,
-                <span class="font-bold">redima IRECs de manera transparente</span>
-                y contribuya al desarrollo sostenible. Nuestro servicio simplificado le permite
-                <span class="font-bold">gestionar, trazar y visibilizar</span>
+            description='<p class="max-w-[430px]">
+                En Cero Trade, <span class="font-bold">redima IRECs de manera transparente</span> y
+                contribuya al desarrollo sostenible.Nuestro servicio simplificado
+                le permite <span class="font-bold">gestionar, trazar y visibilizar</span>
                 todas sus transacciones en el mismo lugar.
             </p>'
             buttonText="Redime i-RECS"
@@ -71,7 +48,7 @@
         <div class="flex flex-row justify-center other:gap-8 mb-8">
             <WelcomeBox
             subtitle="Maximice el retorno de su energía verde"
-            description='<p>
+            description='<p class="max-w-[410px]">
                 En el Marketplace de Cero Trade
                 <span class="font-bold">puede ofrecer sus i-RECs</span>
                 a miles de clientes en tiempo real, automatizando el proceso de venta
@@ -98,7 +75,7 @@
             <WelcomeBox
             title="Para empresas"
             subtitle="Conecte su negocio con un mercado diverso de atributos ambientales"
-            description='<p>
+            description='<p class="max-w-[450px]">
                 <span class="font-bold">Descubra y adquiera certificados</span>
                 de manera sencilla mediante Cero Trade, expandiendo su cartera y
                 llegando a un mayor número de clientes interesados en energías limpias.
@@ -181,14 +158,15 @@
                     <img :src="wind" alt="Wind" id="wind" class="xs:w-1/2">
                     <WelcomeBox
                         subtitle="¿Qué son los i-REC?"
-                        description='<p class="text-left">
+                        description='<p class="text-left mb-4">
                                     El i-REC es un estándar internacional para
                                     <span class="font-bold">emitir, rastrear, comercializar y
-                                    canjear certificados de energía renovable</span>.
-                                    Son reconocidos internacionalmente, por lo que las empresas que
-                                    deseen reducir su huella de carbono puede adquirirlos y entrar
-                                    en mercados extranjeros sin inconvenientes.
-                                    Cada i-REC es un atributo que
+                                    canjear certificados de energía renovable</span>.</p>
+                                    <p class="text-left mb-4">Son reconocidos internacionalmente,
+                                    por lo que las empresas que deseen reducir su huella
+                                    de carbono puede adquirirlos y entrar en mercados
+                                    extranjeros sin inconvenientes.</p>
+                                    <p class="text-left">Cada i-REC es un atributo que
                                     <span class="font-bold">
                                     representa 1 MWh de energía renovable</span>
                                     ingresada a la red.

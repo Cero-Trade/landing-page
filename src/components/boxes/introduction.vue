@@ -13,12 +13,12 @@
                 <h2
                 id="main-text"
                 class="font-semibold text-grays-1 text-5xl
-                xs:text-2xl"
+                xs:text-2xl max-w-lg"
                 style="text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);"
                 >
                     Ser <span class="text-greens-1">verde</span> nunca fue tan fácil
                 </h2>
-                <p class="font-light text-sm text-grays-2
+                <p class="font-light text-sm text-grays-2 max-w-lg
                 xs:text-xs">
                     Ayudamos a su empresa a obtener certificados de energía limpia de la manera
                     más simple, transparente y barata del mercado
