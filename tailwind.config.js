@@ -7,6 +7,7 @@ export default {
       screens: {
         xs: { max: '639px' },
         other: { min: '640px' },
+        md: { min: '640px', max: '970px' },
       },
       colors: {
         background: {
@@ -33,6 +34,7 @@ export default {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        inria: ['Inria Sans', 'sans-serif'],
       },
     },
   },
