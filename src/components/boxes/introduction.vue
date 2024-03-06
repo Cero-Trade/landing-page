@@ -38,17 +38,14 @@
         </div>
     </div>
     <div id="costumers" class="bg-background-black">
-        <div id="top-box" class="h-22 py-7 flex flex-column justify-center align-center gap-8">
-            <div class="other:w-1/2 other:pr-10 other:pl-0
-            xs:px-4">
-                <h3 class="text-greens-1 text-center text-xl leading-8 mb-0">
+        <div id="top-box" class="h-22 py-7 flex flex-column justify-center align-center gap-2">
+                <h3 class="text-greens-1 text-center text-xl leading-7 mb-0 max-w-[430px]">
                     En Cero Trade hacemos accesible el mercado de activos climáticos
                 </h3>
-                <p class="text-center text-grays-3 text-sm font-light">
+                <p class="text-center text-grays-3 text-sm font-light max-w-[500px]">
                     Somos un marketplace basado en blockchain que democratiza el acceso a
                     certificados de energía renovable (i-RECs) en América Latina.
                 </p>
-            </div>
         </div>
     </div>
 </template>

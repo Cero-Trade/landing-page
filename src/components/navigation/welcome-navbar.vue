@@ -21,7 +21,7 @@
           Preguntas Frecuentes
         </span>
 
-        <span class="text-grays-3 text-xs cursor-pointer" @click="redirectToLink(formLink)">
+        <span class="text-grays-3 text-xs cursor-pointer" @click="redirectToContactUs">
           Contacto
         </span>
 

@@ -158,15 +158,17 @@
                     <img :src="wind" alt="Wind" id="wind" class="xs:w-1/2">
                     <WelcomeBox
                         subtitle="¿Qué son los i-REC?"
-                        description='<p class="text-left mb-4">
+                        description='<p class="text-left mb-4 max-w-[520px]">
                                     El i-REC es un estándar internacional para
                                     <span class="font-bold">emitir, rastrear, comercializar y
                                     canjear certificados de energía renovable</span>.</p>
-                                    <p class="text-left mb-4">Son reconocidos internacionalmente,
+                                    <p class="text-left mb-4 max-w-[520px]">
+                                    Son reconocidos internacionalmente,
                                     por lo que las empresas que deseen reducir su huella
                                     de carbono puede adquirirlos y entrar en mercados
                                     extranjeros sin inconvenientes.</p>
-                                    <p class="text-left">Cada i-REC es un atributo que
+                                    <p class="text-left max-w-[520px]">
+                                    Cada i-REC es un atributo que
                                     <span class="font-bold">
                                     representa 1 MWh de energía renovable</span>
                                     ingresada a la red.
