@@ -11,6 +11,10 @@ export function redirectToContactUs() {
   }, 300);
 }
 
+export function redirectToMVPAlfa() {
+  this.$router.push('/alfa');
+}
+
 export function redirectToCompanies() {
   this.$router.push('/companies');
   setTimeout(() => {
