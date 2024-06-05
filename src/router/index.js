@@ -4,6 +4,7 @@ import { nextTick } from 'vue';
 
 // route imports
 import LandingPage from '@/pages/welcome/landing-page.vue';
+import AlfaMVP from '@/pages/welcome/alfa.vue';
 import AboutUs from '@/pages/welcome/about-us.vue';
 import ContactUs from '@/pages/welcome/contact-us.vue';
 import Companies from '@/pages/welcome/companies.vue';
@@ -56,6 +57,12 @@ const routes = [
         meta: { head: `FAQ - ${DEFAULT_TITLE}` },
       },
     ],
+  },
+  {
+    path: '/alfa',
+    name: 'AlfaMVP',
+    component: AlfaMVP,
+    meta: { head: `Alfa MVP - ${DEFAULT_TITLE}` },
   },
 ];
 
