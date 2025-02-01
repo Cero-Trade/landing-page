@@ -9,6 +9,7 @@ import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 import router from './router';
 import App from './App.vue';
+import vueNearPlugin from './plugins/near-api';
 
 const vuetify = createVuetify({
   components,
@@ -19,5 +20,7 @@ const app = createApp(App);
 
 app.use(router);
 app.use(vuetify);
+
+vueNearPlugin(app)
 
 app.mount('#app');
