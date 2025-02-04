@@ -13,6 +13,10 @@
           Quiénes Somos
         </span>
 
+        <span class="text-grays-3 text-xs cursor-pointer" @click="$router.push('/waiting-list')">
+          Lista de espera
+        </span>
+
         <span class="text-grays-3 text-xs cursor-pointer" @click="redirectToHowItWorks">
           Cómo Funciona
         </span>
@@ -25,7 +29,7 @@
           Contacto
         </span>
 
-        <button
+        <!-- <button
           class="text-xs bg-greens-1 rounded-sm flex hover:brightness-95 px-4
           flex-row py-2.5 font-medium items-center gap-1.5 cursor-pointer"
           id="home-navbar-btn"
@@ -33,7 +37,7 @@
         >
           Probar Alfa MVP
           <img :src="arrowRight" alt="arrow-right icon">
-        </button>
+        </button> -->
 
       </div>
     </nav>

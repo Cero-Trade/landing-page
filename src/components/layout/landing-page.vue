@@ -2,9 +2,8 @@
     <div>
       <WelcomeNavbar v-if="!isMobile" />
       <Drawer v-else />
-      <div v-if="showPopup"
-      class="absolute w-full flex justify-center mt-24 backdrop-blur-sm other:p-8 xs:p-4">
-            <WelcomePopUp :showPopup="showPopup" @close="showPopup = false"></WelcomePopUp>
+      <div v-if="showPopup" class="absolute w-full flex justify-center mt-24 backdrop-blur-sm other:p-8 xs:p-4">
+        <WelcomePopUp :showPopup="showPopup" @close="showPopup = false"></WelcomePopUp>
       </div>
       <Introduction></Introduction>
       <router-view></router-view>
@@ -31,7 +30,7 @@ export default {
     return {
       drawer: false,
       isMobile: window.innerWidth <= 760,
-      showPopup: true,
+      showPopup: false,
     };
   },
   mounted() {

@@ -1,6 +1,5 @@
 <template>
     <div>
-      <NFTs></NFTs>
       <header class="bg-background-gray h-28 font-inter flex justify-center items-center">
         <h1 class="text-grays-2 text-center text-3xl font-bold">
           Bienvenido a la versión Alfa de Cero Trade
@@ -25,12 +24,8 @@
   
   <script>
   import arrowRight from '@/assets/icons/welcome/navbar-right-arrow.svg';
-  import NFTs from './nfts.vue'
   
   export default {
-    components: {
-      NFTs
-    },
     data() {
       return {
         arrowRight,

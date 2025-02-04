@@ -11,6 +11,7 @@ import Companies from '@/pages/welcome/companies.vue';
 import Generators from '@/pages/welcome/generators.vue';
 import FAQ from '@/pages/welcome/faq.vue';
 import LandingPageTemplate from '@/components/layout/landing-page.vue';
+import WaitingList from '@/pages/waiting-list.vue';
 
 const DEFAULT_TITLE = APP_NAMES.capitalize;
 
@@ -55,6 +56,12 @@ const routes = [
         name: 'FAQ',
         component: FAQ,
         meta: { head: `FAQ - ${DEFAULT_TITLE}` },
+      },
+      {
+        path: '/waiting-list',
+        name: 'WaitingList',
+        component: WaitingList,
+        meta: { head: `Lista de espera - ${DEFAULT_TITLE}` },
       },
     ],
   },
