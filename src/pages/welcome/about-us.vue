@@ -65,12 +65,6 @@ export default {
         {
           src: Joaquin, alt: 'Joaquin', description: 'Joaquín es Ingeniero civil Industrial de la Universidad del Desarrollo, tiene un minor en Derecho de la empresa y una certificación de innovación y emprendimiento de Stanford. Joaquin ha liderado otras Startups en el pasado como LobbyControl y actualmente es mentor de emprendimiento en UDD y USACH.', name: 'Joaquín Gonzalez, CEO y Cofundador',
         },
-        {
-          src: Bea, alt: 'Bea', description: 'Beatriz está cursando su último año como estudiante de Ingeniería en computación de la UC. Ha sido ayudante en muchos cursos de computación, fue parte de la comisión de sustentabilidad del Centro de Alumnos de Ingeniería en la UC y actualmente es presidenta del Capítulo de Ciencias de la Computación.', name: 'Beatriz Errázuriz, Desarrolladora',
-        },
-        {
-          src: Fernanda, alt: 'Fernanda', description: 'Fernanda es estudiante de último año de Periodismo y licenciada en Comunicación Social de la UDP. Hizo su práctica como Community Mannager en CNN Chile y trabajó en el área de reacción de CHV Noticias. Tiene un gran interés por las letras y los idiomas, y actualmente cursa el Diplomado en Traducción Literaria de la UC. ', name: 'Fernanda Navarrete, Community Manager',
-        },
       ],
       formLink: 'https://h9hk1icgi92.typeform.com/to/KBvFGq8Y',
     };
