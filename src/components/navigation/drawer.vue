@@ -7,6 +7,7 @@
         <img
           :src="logo"
           alt="Cero Trade"
+          style="cursor: pointer"
           @click="redirectToHome"
         />
       </div>
@@ -27,27 +28,12 @@
         transition-all duration-1000 overflow-hidden pt-28 font-inter z-50"
         :class="[showDrawer ? 'max-w-lg' : 'max-w-0']"
         >
-            <h3 class="mb-4 text-xl text-grays-4 pl-6" @click="toggleAndRedirect(redirectToHome)">
-                Inicio
-            </h3>
             <h3
-                class="mb-4 text-xl text-grays-4 pl-6"
-                @click="toggleAndRedirect(redirectToAboutUs)"
-            >
-                Quiénes Somos
-            </h3>
-            <h3 class="mb-4 text-xl text-grays-4 pl-6"
-                @click="toggleAndRedirect(redirectToHowItWorks)">
-                Cómo Funciona
-            </h3>
-            <h3 class="mb-4 text-xl text-grays-4 pl-6"
-                @click="toggleAndRedirect(redirectToFAQ)">
-                Preguntas Frecuentas
-            </h3>
-            <h3 class="mb-4 text-xl text-grays-4 pl-6"
-                @click="toggleAndRedirect(redirectToContactUs)">
-                Contacto
-            </h3>
+              v-for="(item, i) in items" :ke="i"
+              class="mb-4 text-xl text-grays-4 pl-6"
+              style="cursor: pointer"
+              @click="toggleAndRedirect(item.action)"
+            >{{ item.name }}</h3>
         </div>
     </div>
     </div>
@@ -57,14 +43,6 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import {
-  redirectToAboutUs,
-  redirectToContactUs,
-  redirectToFAQ,
-  redirectToHome,
-  redirectToHowItWorks,
-} from '@/utils/functions';
-
 import LogoCeroTrade from '@/assets/logos/logo-home-navbar.svg';
 
 export default {
@@ -73,12 +51,41 @@ export default {
       bars: faBars,
       showDrawer: false,
       logo: LogoCeroTrade,
+      items: [
+        {
+          name: "Inicio",
+          action: () => document.documentElement.scrollTop = 0,
+        },
+        {
+          name: "Cómo Funciona",
+          action: () => document.getElementById('how-to-works').scrollIntoView(),
+        },
+        {
+          name: "Quiénes Somos",
+          action: () => document.getElementById('about-us').scrollIntoView(),
+        },
+        {
+          name: "Lista de espera",
+          action: () => document.getElementById('waiting-list').scrollIntoView(),
+        },
+        {
+          name: "Preguntas Frecuentes",
+          action: () => document.getElementById('faq').scrollIntoView(),
+        },
+        {
+          name: "Contacto",
+          action: () => document.getElementById('contact-us').scrollIntoView(),
+        },
+      ]
     };
   },
   components: {
     FontAwesomeIcon,
   },
   methods: {
+    redirectToHome() {
+      document.documentElement.scrollTop = 0
+    },
     toggleDrawer() {
       this.showDrawer = !this.showDrawer;
     },
@@ -86,11 +93,6 @@ export default {
       this.toggleDrawer();
       link();
     },
-    redirectToAboutUs,
-    redirectToContactUs,
-    redirectToFAQ,
-    redirectToHome,
-    redirectToHowItWorks,
   },
 };
 </script>

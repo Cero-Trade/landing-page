@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <section id="faq">
         <div
           class="flex flex-column text-center gap-8 mt-8 font-inter"
           id="faqs-box"
@@ -19,18 +19,11 @@
             <div v-html="faq.answer"
             class="py-5 other:px-24 xs:px-8 text-grays-2 text-sm leading-5"></div>
         </div>
-        <ContactUs></ContactUs>
-    </div>
+    </section>
 </template>
 <script>
 
-// components
-import ContactUs from '@/components/boxes/contact-us.vue';
-
 export default {
-  components: {
-    ContactUs,
-  },
   data() {
     return {
       faqs: [

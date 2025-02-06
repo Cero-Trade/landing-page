@@ -1,5 +1,5 @@
 <template>
-    <div class="font-inter">
+    <section id="how-to-works" class="font-inter">
         <div
             class="bg-background-gray flex flex-row mt-5 h-64 other:px-44 align-center md:!px-8"
             id="troubles-box"
@@ -140,49 +140,38 @@
                 </p>
             </div>
         </div>
-        <div class="flex flex-row justify-center align-center
-        other:px-36 xs:px-2 xs:gap-2 gap-2 mt-8 mb-4 md:!px-4">
-            <img :src=blockchain alt="Blockchain" id="blockchain-image" class="xs:w-5/12"/>
-            <div class="other:px-16 text-grays-1">
+
+        <div class="flex flex-row justify-center align-center other:px-36 xs:px-2
+        xs:gap-2 md:!px-8">
+            <img :src=blockchain alt="Blockchain" id="blockchain-image" class="xs:w-5/12" />
+            <div class="other:px-16 md:!px-0">
                 <h3 class="text-grays-1 other:text-xl xs:text-lg other:mb-8 xs:mb-2 font-bold">
                     Un proceso completamente seguro
                 </h3>
-                <p class="text-grays-2 other:text-sm xs:text-xs mb-4 max-w-[380px]">
+                <p class="text-grays-2 other:text-sm xs:text-xs mb-4 max-w-[400px]">
                     En la plataforma Cero Trade cada transacción queda alojada en una blockchain,
                     maximizando la confianza, trazabilidad y transparencia del proceso
                 </p>
-                <p class="text-grays-2 other:text-sm xs:text-xs max-w-[380px]">
+                <p class="text-grays-2 other:text-sm xs:text-xs max-w-[400px]">
                     Usamos la Internet Computer Protocol (ICP), una de las blockchains que garantiza
                     <span class="font-bold">menor impacto ambiental</span>
                     y mayor seguridad en el manejo de datos
                 </p>
             </div>
         </div>
-        <div class="flex flex-row justify-center py-8">
-            <button
-                class="bg-greens-1 w-32 text-xs py-2 px-2 font-bold cursor-pointer"
-                id="start-btn"
-                @click="redirectToGenerators"
-            >
-                Compra i-RECS
-            </button>
-        </div>
+
         <div class="flex flex-row justify-center my-12">
             <WelcomeBox
                 subtitle="Sistema de compra venta"
                 description='<p class="max-w-[440px]">En el Marketplace de Cero Trade
-                <span class="font-bold">puede ofrecer sus i-RECs</span> a miles de clientes
-                en tiempo real,
-                automatizando el proceso de venta y accediendo a nuevos cosumidores</p>'
-                buttonText="Conoce más aquí"
-                @click="redirectToGenerators"
+                <span class="font-bold">puede obtener i-RECs</span> de un completo catálogo
+                actualizado en tiempo real,
+                automatizando el proceso de compra de acuerdo a sus necesidades</p>'
             >
             </WelcomeBox>
-            <img :src=researcher alt="Researcher" id="researcher-image" class="xs:w-1/2"/>
+            <img :src=researcher alt="Researcher" id="researcher-image" class="xs:w-1/2" />
         </div>
-        <ContactUs></ContactUs>
-
-    </div>
+    </section>
 </template>
 <script>
 
@@ -190,7 +179,6 @@
 import { redirectToGenerators } from '@/utils/functions';
 
 // components
-import ContactUs from '@/components/boxes/contact-us.vue';
 import WelcomeBox from '@/components/boxes/welcome-box.vue';
 
 // images
@@ -209,6 +197,9 @@ import Stats from '@/assets/images/welcome/stats.svg';
 import AchievementsrightArrow from '@/assets/icons/welcome/achievements-right-arrow.svg';
 
 export default {
+  components: {
+    WelcomeBox
+  },
   data() {
     return {
       complex: Complex,
@@ -223,9 +214,6 @@ export default {
       researcher: Researcher,
       AchievementsrightArrow,
     };
-  },
-  components: {
-    ContactUs, WelcomeBox,
   },
   methods: {
     redirectToGenerators,

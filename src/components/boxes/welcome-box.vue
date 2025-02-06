@@ -6,6 +6,7 @@
       xs:text-sm text-grays-1">{{ subtitle }}</h2>
       <p class="text-xs text-grays-2" v-html="description"></p>
       <button
+        v-if="buttonText"
         class="rounded-sm text-xs bg-greens-1 font-semibold
         other:w-1/3 p-2 mt-2 text-blacks-1 cursor-pointer"
         @click="$emit('click')">

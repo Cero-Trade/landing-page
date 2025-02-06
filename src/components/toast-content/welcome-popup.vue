@@ -14,11 +14,13 @@
                 @click="closeWelcomePopup"
             >
         </div>
-        <div class="other:w-9/12 flex flex-column p-5 md:!p-3 xs:w-full">
-            <div class="font-inter gap-2 flex flex-column xs:justify-center xs:h-full">
+        <div class="other:w-9/12 flex flex-column p-5 md:!p-3 w-full h-full">
+            <div
+            class="font-inter gap-2 flex flex-column xs:justify-center h-full overflow-hidden"
+            >
                 <h1
                 class="font-bold text-grays-1 other:text-[29px]
-                xs:text-2xl md:!text-xl !leading-8"
+                xs:text-2xl md:!text-xl !leading-8 max-w-64"
                 >
                     Estamos afinando los últimos detalles
                 </h1>
@@ -27,12 +29,11 @@
                 para la descarbonización de su empresa
                 </p>
                 <p class="font-normal text-[10px] text-grays-7 leading-3">
-                    También puedes contactarnos para participar
-                    de la validación de nuestro servicio y enterarte
-                    antes que nadie de nuestro lanzamiento
+                    También puedes contactarnos para enterarte antes que nadie de nuestro
+                    lanzamiento y/o participar en las últimas fases de desarrollo
                 </p>
             </div>
-            <div class="flex flex-column other:h-full justify-end" id="links">
+            <div class="flex flex-column justify-end" id="links">
                 <div class="flex flex-row justify-between align-center">
                     <p
                         class="underline font-iria other:text-xs xs:text-xs

@@ -3,7 +3,8 @@
     id="footer"
     class="font-inter bg-background-black w-full h-full !p-0"
   >
-    <div id="footer__wrapper" class="flex flex-row bg-background-black w-full p-8 gap-40">
+    <div id="footer__wrapper" class="flex flex-row
+    justify-center bg-background-black w-full p-8 gap-40">
       <div class="flex flex-column">
         <div class="flex flex-row gap-8 mb-4">
           <img :src="ceroTradeLogo" alt="Logo" id="logo-footer"/>

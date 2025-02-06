@@ -10,6 +10,7 @@ import * as directives from 'vuetify/directives';
 import router from './router';
 import App from './App.vue';
 import vueNearPlugin from './plugins/near-api';
+import { register as registerSwiper } from 'swiper/element/bundle';
 
 const vuetify = createVuetify({
   components,
@@ -22,5 +23,6 @@ app.use(router);
 app.use(vuetify);
 
 vueNearPlugin(app)
+registerSwiper();
 
 app.mount('#app');

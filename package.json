@@ -19,6 +19,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.6",
     "axios": "^1.6.7",
     "express": "^4.18.2",
+    "swiper": "^11.2.2",
     "vue": "^3.4.15",
     "vue-axios": "^3.5.2",
     "vue-near": "^0.2.1",

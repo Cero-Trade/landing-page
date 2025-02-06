@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section id="contact-us">
       <div class="flex flex-column text-center gap-8 mt-8 font-inter" id="contact-box">
           <h2 class="font-bold text-grays-1 text-2xl">Contáctanos</h2>
           <div class="bg-background-gray p-8">
@@ -56,7 +56,7 @@
               </div>
           </div>
       </div>
-  </div>
+  </section>
 </template>
 
 <script>

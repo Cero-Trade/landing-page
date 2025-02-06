@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="about-us">
         <div id="team-title" class="flex flex-column text-center gap-8 mt-8 font-inter">
             <h2 class="font-bold text-grays-1 text-2xl">Cero Team</h2>
             <div class="bg-grays-3">
@@ -41,7 +41,6 @@
               Únete al Cero Team
             </button>
           </div>
-        <ContactUs></ContactUs>
     </div>
 </template>
 <script>
@@ -49,9 +48,6 @@
 import {
   redirectToLink,
 } from '@/utils/functions';
-
-// components
-import ContactUs from '@/components/boxes/contact-us.vue';
 
 // images
 import Bea from '@/assets/images/team/bea.svg';
@@ -78,9 +74,6 @@ export default {
       ],
       formLink: 'https://h9hk1icgi92.typeform.com/to/KBvFGq8Y',
     };
-  },
-  components: {
-    ContactUs,
   },
   methods: {
     redirectToLink,
