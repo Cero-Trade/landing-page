@@ -9,7 +9,10 @@
         <span
           v-for="(item, i) in items" :key="i"
           class="text-grays-3 text-xs cursor-pointer"
-          @click="item.action"
+          @click="() => {
+            router.push('/')
+            item.action()
+          }"
         >{{ item.name }}</span>
 
         <!-- <button
@@ -27,6 +30,7 @@
 
 <script setup>
 import navbarLogo from '@/assets/logos/logo-home-navbar.svg';
+import router from '@/router';
 
 const 
   formLink = 'https://h9hk1icgi92.typeform.com/to/KBvFGq8Y',
@@ -43,10 +47,10 @@ const
       name: "Quiénes Somos",
       action: () => document.getElementById('about-us').scrollIntoView(),
     },
-    {
-      name: "Lista de espera",
-      action: () => document.getElementById('waiting-list').scrollIntoView(),
-    },
+    // {
+    //   name: "Lista de espera",
+    //   action: () => document.getElementById('waiting-list').scrollIntoView(),
+    // },
     {
       name: "Preguntas Frecuentes",
       action: () => document.getElementById('faq').scrollIntoView(),

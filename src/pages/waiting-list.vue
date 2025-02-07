@@ -129,6 +129,16 @@ const scale = (val, inMin, inMax, outMin, outMax) =>
   background-color: #181e23;
 }
 
+@media (max-width: 760px) {
+  #waiting-list {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .swiper-container {
   --blur: 13px;
   --opacity: .95;

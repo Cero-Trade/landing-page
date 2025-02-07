@@ -3,8 +3,10 @@ import { APP_NAMES } from '@/plugins/dictionary';
 import { nextTick } from 'vue';
 
 // route imports
+import LandingTemplate from '@/layouts/landing-layout.vue';
 import AlfaMVP from '@/pages/alfa.vue';
-import LandingPageTemplate from '@/layouts/landing-page.vue';
+import WaitingList from '@/pages/waiting-list.vue';
+import LandingPage from '@/pages/welcome/landing-page.vue';
 
 const DEFAULT_TITLE = APP_NAMES.capitalize;
 
@@ -12,8 +14,20 @@ const routes = [
   {
     path: '/',
     name: 'BaseRoute',
-    component: LandingPageTemplate,
+    component: LandingTemplate,
     children: [
+      {
+        path: '',
+        name: 'LandingPage',
+        component: LandingPage,
+        meta: { head: `Landing Page - ${DEFAULT_TITLE}` },
+      },
+      {
+        path: '/waiting-list',
+        name: 'WaitingList',
+        component: WaitingList,
+        meta: { head: `Lista de espera - ${DEFAULT_TITLE}` },
+      },
     ],
   },
   {

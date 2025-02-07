@@ -1,41 +1,5 @@
 <template>
     <section id="how-to-works" class="font-inter">
-        <div
-            class="bg-background-gray flex flex-row mt-5 h-64 other:px-44 align-center md:!px-8"
-            id="troubles-box"
-        >
-            <img :src=complex alt="Complex" id="complex-images" class="xs:w-1/2"/>
-            <p class="other:px-12 text-center text-grays-1 md:!px-8">
-                El camino a ser una marca verde es un proceso
-                <span class="font-bold">extremadamente </span>
-                <span class="text-greens-2 underline font-bold">complejo</span>,
-                <span class="text-greens-2 underline font-bold">caro</span>
-                <span class="font-bold"> y que puede tomar</span>
-                <span class="text-greens-2 underline font-bold"> meses</span>.
-            </p>
-        </div>
-        <div
-            class="bg-background-gray flex flex-row mt-5 h-64 other:px-44 align-center md:!px-8"
-            id="costumers-box"
-        >
-            <p class="other:px-12 px-4 text-center text-grays-1">
-                Por eso en Cero Trade
-                <span class="font-bold">hemos ideado un marketplace</span>
-                a través de la cual puedes lograrlo
-                <span class="font-bold">de una manera muy
-                    <span class="text-greens-2 underline font-bold">simple</span>
-                    y en cosa de
-                    <span class="text-greens-2 underline font-bold">minutos</span>
-                </span>
-                .
-            </p>
-            <img
-                :src=costumers
-                alt="Costumers"
-                id="costumers-image"
-                class="relative other:mt-12 xs:w-1/2"
-            />
-        </div>
         <div>
             <div class="flex flex-column text-center gap-8 other:mt-24 xs:mt-5">
                 <h2 class="font-bold text-grays-1 text-2xl">Cómo funciona nuestro marketplace</h2>
@@ -182,7 +146,6 @@ import { redirectToGenerators } from '@/utils/functions';
 import WelcomeBox from '@/components/boxes/welcome-box.vue';
 
 // images
-import Complex from '@/assets/images/welcome/complex.svg';
 import Costumers from '@/assets/images/welcome/costumers.svg';
 import PC from '@/assets/images/welcome/pc.svg';
 import Blockchain from '@/assets/images/welcome/blockchain.svg';
@@ -202,7 +165,6 @@ export default {
   },
   data() {
     return {
-      complex: Complex,
       costumers: Costumers,
       pc: PC,
       energy: Energy,

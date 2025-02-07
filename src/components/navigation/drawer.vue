@@ -64,10 +64,10 @@ export default {
           name: "Quiénes Somos",
           action: () => document.getElementById('about-us').scrollIntoView(),
         },
-        {
-          name: "Lista de espera",
-          action: () => document.getElementById('waiting-list').scrollIntoView(),
-        },
+        // {
+        //   name: "Lista de espera",
+        //   action: () => document.getElementById('waiting-list').scrollIntoView(),
+        // },
         {
           name: "Preguntas Frecuentes",
           action: () => document.getElementById('faq').scrollIntoView(),
@@ -90,6 +90,7 @@ export default {
       this.showDrawer = !this.showDrawer;
     },
     toggleAndRedirect(link) {
+      this.$router.push('/')
       this.toggleDrawer();
       link();
     },
