@@ -100,6 +100,7 @@ import arrowNext from '@/assets/icons/welcome/arrow-next.svg';
 
 // members
 import Joaquin from '@/assets/images/team/joaquin.svg';
+import Herian from '@/assets/images/team/herian.svg';
 import Vale from '@/assets/images/team/vale.svg';
 
 export default {
@@ -111,6 +112,9 @@ export default {
         },
         {
           src: Joaquin, alt: 'Joaquin', description: 'Joaquín es Ingeniero civil Industrial de la Universidad del Desarrollo, tiene un minor en Derecho de la empresa y una certificación de innovación y emprendimiento de Stanford. Joaquin ha liderado otras Startups en el pasado como LobbyControl y actualmente es mentor de emprendimiento en UDD y USACH.', name: 'Joaquín Gonzalez, CEO y Cofundador',
+        },
+        {
+          src: Herian, alt: 'Herian', description: 'Herian es un Desarrollador de Software Multiplataforma, tiene una certificación en desarrollo blockchain de Near Certified Developer y ICP Developer. Herian es un entusiasta de la tecnología y tiene amplios conocimientos como FullStack developer', name: 'Herian Palencia, Líder técnico',
         },
       ],
       formLink: 'https://h9hk1icgi92.typeform.com/to/KBvFGq8Y',
